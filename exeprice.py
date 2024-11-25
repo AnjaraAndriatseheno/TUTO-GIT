@@ -1,10 +1,29 @@
-# Fonction pour lister les todos - à réaliser
-def lister_todos():
-    print('Fonctionnalité "lister les todos" à venir')
+todo_list =["Arroser les plantes", "Sortir le singe", "Aller à la pharmacie", "Finir le projet GIT"]
 
-# Fonction pour créer un todo - à réaliser
-def creer_todo():
-    print('Fonctionnalité "créer un todo" à venir')
+def print_list(todo_list) : 
+    print("Voici ce qu'il reste à faire dans votre liste")
+    i = 0
+    while i < len(todo_list) : 
+        print(todo_list[i])
+        print("")
+        i += 1
+
+
+def new_todo(todo_list):
+    print("Souhaitez vous ajouter un nouvelle tâche à votre liste?")
+    choice = input()
+    if choice == "oui" :
+        print("Veuillez entrer votre nouvelle tâche")
+        new_todo = input()
+        todo_list.append(new_todo)
+    else : 
+        print("Okay bonne journée")
+
+
+    
+
+
+
 
 # Fonction pour modifier le statut d'un todo - à réaliser
 def modifier_statut_todo():
